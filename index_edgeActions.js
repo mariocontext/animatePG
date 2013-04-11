@@ -3,7 +3,7 @@
 //Edge symbol: 'stage'
 (function(symbolName){Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",0,function(sym,e){});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"document","compositionReady",function(sym,e){sym.audio01=new buzz.sound("media/birdsong",{formats:["ogg","mp3"]});sym.audio02=new buzz.sound("media/cardinal-song",{formats:["ogg","mp3"]});});
+Symbol.bindElementAction(compId,symbolName,"document","compositionReady",function(sym,e){sym.audio01=new buzz.sound("birdsong",{formats:["ogg","mp3"]});sym.audio02=new buzz.sound("cardinal-song",{formats:["ogg","mp3"]});});
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${_body2}","touchstart mousedown",function(sym,e){var wingsObject=sym.getSymbol("wings");if(wingsObject.isPlaying()){wingsObject.stop();}
 else{wingsObject.play();sym.audio01.play();}});
